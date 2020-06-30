@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap 4 Tutorial</title>
+    <!--        <link rel="stylesheet" href="css/bootstrap-4.0.css">-->
+    <link rel="stylesheet" href="css/bootstrap-4.5.0.css">
+    <!--    <link rel="stylesheet" href="css/bootstrap.css">-->
+
+</head>
+<body>
+<div style="margin-top: 50px;"></div>
+<h2 class="display-4 text-center bg-success my-4">Modal</h2>
+
+<div class="container">
+
+    <!--    MODAL TRIGGER-->
+  <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Launch Modal</button>
+
+<!--    START MODAL-->
+<div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content bg-transparent text-justify text-light">
+          <!--  main part-->
+            <div class="modal-header">
+                <h5 class="modal-title">Modal Title</h5>
+            <button class="btn btn-danger close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, beatae commodi deleniti eos ex obcaecati officia provident quas! Accusantium alias assumenda culpa delectus distinctio, est ex inventore ipsam iste itaque mollitia obcaecati officia officiis porro possimus quas quos tempora totam vel veniam voluptas voluptatem.
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+            <!--  main part end-->
+        </div>
+
+    </div>
+    </div>
+
+    <hr class="bg-dark">
+    <!--    LOGIN MODAL-->
+  <button class="btn btn-success" data-toggle="modal" data-target="#myLogin">Login</button>
+
+<!--    START MODAL-->
+<div class="modal fade" id="myLogin">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content bg-info">
+          <!--  main part-->
+            <div class="modal-header">
+                <h5 class="modal-title">Login User</h5>
+            <button class="btn btn-warning close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <div class="form-group">
+                        <label for="username">Username : </label>
+                        <input type="text" name="" id="username" class="form-control" placeholder="Username">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password : </label>
+                        <input type="password" name="" id="password" class="form-control" placeholder="Username">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-success">Login</button>
+            </div>
+            <!--  main part end-->
+        </div>
+
+    </div>
+
+</div>
+    <hr class="bg-dark">
+    <br>
+</div>
+
+<div style="margin-bottom: 50px;"></div>
+
+<hr>
+
+<script src="js/jquery-3.5.1.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+
+</script>
+</body>
+</html>

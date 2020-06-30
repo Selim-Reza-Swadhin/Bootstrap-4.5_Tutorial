@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap 4 Tutorial</title>
+    <!--        <link rel="stylesheet" href="css/bootstrap-4.0.css">-->
+    <link rel="stylesheet" href="css/bootstrap-4.5.0.css">
+    <!--    <link rel="stylesheet" href="css/bootstrap.css">-->
+
+</head>
+<body>
+<div style="margin-top: 50px;"></div>
+<h2 class="display-4 text-center bg-success my-4">Collapse and Accordion</h2>
+
+<div class="container">
+
+    <!--BUTTON WITH COLLAPSE-->
+    <button class="btn btn-primary mb-4" data-target="#collapse-1" data-toggle="collapse">Read More</button>
+
+    <hr class="bg-dark">
+    <div class="collapse" id="collapse-1">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Collapse Title</h3>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A animi commodi debitis dolor dolores eaque
+                est, exercitationem harum impedit, inventore iusto minus molestiae odio pariatur ratione, repellat sequi
+                soluta? Corporis enim iusto neque.
+            </div>
+        </div>
+    </div>
+
+    <hr class="bg-dark">
+    <!--    ACCORDION-->
+
+    <div id="accordion" role="tablist">
+        <div class="card">
+            <div class="card-header" role="tab">
+                <h5 class="mb-o">
+                    <a href="#section-1" data-toggle="collapse">Section-1</a>
+                </h5>
+            </div>
+            <!-- -------------------- Accordion Start--------------------- -->
+            <div class="collapse" id="section-1" data-parent="#accordion">
+                <div class="card-body">
+                    <h3 class="card-title">Collapse Title</h3>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A animi commodi debitis dolor dolores
+                    eaque est, exercitationem harum impedit, inventore iusto minus molestiae odio pariatur ratione,
+                    repellat sequi soluta? Corporis enim iusto neque.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="bg-dark">
+
+    <!--   MULTILEVEL ACCORDION-->
+
+    <div id="accordion2" role="tablist">
+        <div class="card">
+            <div class="card-header" role="tab">
+                <h5 class="mb-o">
+                    <a href="#section-2" data-toggle="collapse">Section-2</a>
+                </h5>
+            </div>
+            <!-- -------------------- Accordion Start--------------------- -->
+            <div class="collapse show" id="section-2" data-parent="#accordion2">
+                <div class="card-body">
+                    <h3 class="card-title">Collapse Title</h3>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A animi commodi debitis dolor dolores
+                    eaque
+                    est, exercitationem harum impedit, inventore iusto minus molestiae odio pariatur ratione, repellat
+                    sequi
+                    soluta? Corporis enim iusto neque.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" role="tab">
+                <h5 class="mb-o">
+                    <a href="#section-3" data-toggle="collapse">Section-3</a>
+                </h5>
+            </div>
+            <!-- -------------------- Accordion Start--------------------- -->
+            <div class="collapse" id="section-3" data-parent="#accordion2">
+                <div class="card-body">
+                    <h3 class="card-title">Collapse Title</h3>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A animi commodi debitis dolor dolores
+                    eaque
+                    est, exercitationem harum impedit, inventore iusto minus molestiae odio pariatur ratione, repellat
+                    sequi
+                    soluta? Corporis enim iusto neque.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" role="tab">
+                <h5 class="mb-o">
+                    <a href="#section-4" data-toggle="collapse">Section-4</a>
+                </h5>
+            </div>
+            <!-- -------------------- Accordion Start--------------------- -->
+            <div class="collapse" id="section-4" data-parent="#accordion2">
+                <div class="card-body">
+                    <h3 class="card-title">Collapse Title</h3>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A animi commodi debitis dolor dolores
+                    eaque
+                    est, exercitationem harum impedit, inventore iusto minus molestiae odio pariatur ratione, repellat
+                    sequi
+                    soluta? Corporis enim iusto neque.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" role="tab">
+                <h5 class="mb-o">
+                    <a href="#section-5" data-toggle="collapse">Section-5</a>
+                </h5>
+            </div>
+            <!-- -------------------- Accordion Start--------------------- -->
+            <div class="collapse" id="section-5" data-parent="#accordion2">
+                <div class="card-body">
+                    <h3 class="card-title">Collapse Title</h3>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A animi commodi debitis dolor dolores
+                    eaque
+                    est, exercitationem harum impedit, inventore iusto minus molestiae odio pariatur ratione, repellat
+                    sequi
+                    soluta? Corporis enim iusto neque.
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="bg-dark">
+    <br>
+</div>
+
+<div style="margin-bottom: 50px;"></div>
+
+<hr>
+
+<script src="js/jquery-3.5.1.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

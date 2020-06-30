@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap 4 Tutorial</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+</head>
+<body class="bg-info">
+<div style="margin-top: 50px;"></div>
+<h2 class="display-4 text-center bg-success my-4">Forms and Input</h2>
+
+<div class="container bg-dark text-light">
+<!--    FORM -->
+    <form action="">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control form-control-sm" name="" id="name" placeholder="Enter name">
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control form-control-lg" name="" id="email" placeholder="Email Address">
+            <small class="form-text text-muted">Your email will not be shared with anyone</small>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" name="" id="password" placeholder="Password" readonly>
+        </div>
+        <div class="form-group">
+            <label for="gender">Gender</label>
+            <select class="form-control" name="" id="gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea class="form-control" name="" id="message" rows="3" placeholder="What's your on mind."></textarea>
+        </div>
+        <div class="form-group">
+            <label for="file">File</label>
+            <input type="file" class="form-control-file" name="" id="file" placeholder="Password">
+            <small class="form-text text-muted">Max 3 mb size</small>
+        </div>
+
+    <fieldset class="form-group">
+        <legend>What are you using this service for ?</legend>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input class="form-check-input" type="radio" value="option1" checked> Personal
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input class="form-check-input" type="radio" value="option2" checked> Commercial use
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input class="form-check-input" type="radio" value="option3" disabled> Testing
+            </label>
+        </div>
+    </fieldset>
+
+
+    <div class="form-check">
+        <label class="form-check-label">
+            <input class="form-check-input" type="checkbox"> Sign up for newsletter
+        </label>
+    </div>
+        <button class="btn btn-primary mt-3" type="submit">Submit</button>
+
+    </form>
+
+    <hr class="bg-light">
+<!--    INLINE FORM-->
+    <form action="" class="form-inline">
+        <input class="form-control mr-2" type="text" name="" id="" placeholder="Enter username">
+        <input class="form-control mr-2" type="text" name="" id="" placeholder="Password">
+        <div class="form-check">
+            <label class="form-check-label mr-2">
+                <input class="form-check-input" type="checkbox"> Sign up for newsletter
+            </label>
+        </div>
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+
+    <hr class="bg-light">
+<!--    VALIDATION-->
+    <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" class="form-control is-valid" name="" id="username">
+        <div class="valid-feedback">Username available</div>
+        <small>Must be at least 8 characters</small>
+    </div>
+
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input type="text" class="form-control is-invalid" name="" id="password">
+        <div class="invalid-feedback">That's password is not safe</div>
+        <small>Please use a strong password</small>
+    </div>
+
+    <hr class="bg-light">
+    <br>
+</div>
+
+<div style="margin-bottom: 50px;"></div>
+
+<hr>
+
+<script src="js/jquery-3.5.1.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

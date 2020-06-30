@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap 4 Tutorial</title>
+    <!--        <link rel="stylesheet" href="css/bootstrap-4.0.css">-->
+    <link rel="stylesheet" href="css/bootstrap-4.5.0.css">
+    <!--    <link rel="stylesheet" href="css/bootstrap.css">-->
+
+</head>
+<body>
+<div style="margin-top: 50px;"></div>
+<h2 class="display-4 text-center bg-success my-4">Tooltips</h2>
+
+<div class="container">
+
+    <!--    TOOLTIPS-->
+    <button class="btn btn-primary" title="Hello World" data-placement="top" data-toggle="tooltip">Tooltip on top
+    </button>
+    <button class="btn btn-primary" title="Hello World" data-placement="bottom" data-toggle="tooltip">Tooltip on
+        bottom
+    </button>
+    <button class="btn btn-primary" title="Hello World" data-placement="left" data-toggle="tooltip">Tooltip on left
+    </button>
+    <button class="btn btn-outline-primary-primary" title="Hello World" data-placement="right" data-toggle="tooltip">
+        Tooltip on right
+    </button>
+
+    <hr class="bg-dark">
+    <!--    TOOLTIPS WITH HTML-->
+    <button  id="hello" class="btn btn-success" data-html="true"
+            title="<h3>Tooltip html tags</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A animi commodi debitis dolor dolores eaque est, exercitationem harum impedit, inventore iusto minus molestiae odio pariatur ratione, repellat sequi soluta? Corporis enim iusto neque. </p>"
+            data-placement="right" data-toggle="tooltip">Tooltip on top
+    </button>
+
+    <hr class="bg-dark">
+    <!--    TRIGGER WITH JS-->
+    <button class="btn btn-primary" onclick="showToolTip()">Show tooltip</button>
+    <button class="btn btn-secondary" onclick="hideToolTip()">Hide tooltip</button>
+    <button class="btn btn-warning" onclick="toggleToolTip()">Toggle tooltip</button>
+
+    <hr class="bg-dark">
+    <br>
+</div>
+
+<div style="margin-bottom: 50px;"></div>
+
+<hr>
+
+<script src="js/jquery-3.5.1.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+    $('[data-toggle="tooltip"]').tooltip();
+
+    function showToolTip() {
+        $('#hello').tooltip('show');
+    }
+
+    function hideToolTip() {
+        $('#hello').tooltip('hide');
+    }
+
+    function toggleToolTip() {
+        $('#hello').tooltip('toggle');
+    }
+</script>
+</body>
+</html>

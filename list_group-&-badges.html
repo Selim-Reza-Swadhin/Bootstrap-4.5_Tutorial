@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap 4 Tutorial</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+</head>
+<body class="bg-info">
+<div style="margin-top: 50px;"></div>
+<h2 class="display-4 text-center bg-success my-4">List Group and Badges</h2>
+
+<div class="container bg-dark text-light">
+<!--    LIST GROUP-->
+    <ul class="list-group">
+        <li class="list-group-item text-dark">My List Item One</li>
+        <li class="list-group-item text-dark">My List Item Two</li>
+        <li class="list-group-item text-dark">My List Item Three</li>
+        <li class="list-group-item text-dark">My List Item Four</li>
+        <li class="list-group-item text-dark">My List Item Five</li>
+    </ul>
+    <hr class="bg-light">
+    <!--    LIST GROUP WITH LINK -->
+    <ul class="list-group">
+        <a class="list-group-item list-group-item-action active" href="#">My List Item One</a>
+        <a class="list-group-item list-group-item-action" href="#">My List Item Two</a>
+        <a class="list-group-item list-group-item-action" href="#">My List Item Three</a>
+        <a class="list-group-item list-group-item-action" href="#">My List Item Four</a>
+        <a class="list-group-item list-group-item-action" href="#">My List Item Five</a>
+    </ul>
+
+    <hr class="bg-light">
+    <!--    CONTEXTUAL CLASSES -->
+    <ul CLASS="list-group">
+        <li class="list-group-item list-group-item-action list-group-item-primary">My List Item One</li>
+        <li class="list-group-item list-group-item-action list-group-item-info">My List Item Two</li>
+        <li class="list-group-item list-group-item-action list-group-item-danger">My List Item Three</li>
+        <li class="list-group-item list-group-item-action list-group-item-warning">My List Item Four</li>
+        <li class="list-group-item list-group-item-action list-group-item-success">My List Item Five</li>
+    </ul>
+
+    <!--    LIST GROUP WITH BADGES -->
+    <ul class="list-group">
+        <li class="list-group-item text-success">My List Item One <span class="badge badge-primary align-top">11</span></li>
+        <li class="list-group-item text-success">My List Item Two <span class="badge badge-success align-bottom">12</span></li>
+        <li class="list-group-item text-success">My List Item Three <span class="badge badge-danger align-baseline">13</span></li>
+        <li class="list-group-item text-success">My List Item Pill <span class="badge badge-pill align-middle">14</span></li>
+        <li class="list-group-item text-success">My List Item Five <span class="badge badge-dark">15</span></li>
+    </ul>
+    <hr class="bg-light">
+
+<!--    CUSTOM CONTEXT-->
+<div class="list-group">
+    <a class="list-group-item list-group-item-primary active" href="#">
+        <div class="d-flex">
+            <h5>My Post One</h5>
+            <small> 3 days ago</small>
+        </div>
+            <p class="mb-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis sunt tempore?</p>
+            <small>By Swadhin</small>
+
+    </a>
+
+
+    <a class="list-group-item list-group-item-action" href="#">
+        <div class="d-flex">
+            <h5>My Post One</h5>
+            <small>3 days ago</small>
+            </div>
+            <p class="mb-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis sunt tempore?</p>
+            <small>By Swadhin</small>
+    </a>
+
+
+    <a class="list-group-item list-group-item-success" href="#">
+        <div class="d-flex">
+            <h5>My Post One</h5>
+            <small>3 days ago</small>
+            </div>
+            <p class="mb-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis sunt tempore?</p>
+            <small>By Swadhin</small>
+    </a>
+</div>
+    <hr class="bg-light">
+<!--    BREADCRUMBS-->
+    <ol class="breadcrumb text-dark">
+        <li class="breadcrumb-item active">Home</li>
+    </ol>
+    <ol class="breadcrumb text-dark">
+        <li class="breadcrumb-item">
+            <a href="#">Home</a>
+        </li>
+        <li class="breadcrumb-item active">Users</li>
+    </ol>
+    <ol class="breadcrumb text-dark">
+        <li class="breadcrumb-item">
+            <a href="#">Home</a>
+        </li>
+        <li class="breadcrumb-item">
+            <a href="#">Users</a>
+        </li>
+        <li class="breadcrumb-item active">Swadhin</li>
+    </ol>
+
+    <hr class="bg-light">
+
+    <br>
+</div>
+
+<div style="margin-bottom: 50px;"></div>
+
+<hr>
+
+<script src="js/jquery-3.5.1.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

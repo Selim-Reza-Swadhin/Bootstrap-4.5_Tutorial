@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap 4 Tutorial</title>
+    <link rel="stylesheet" href="css/bootstrap-4.0.css">
+    <!--    <link rel="stylesheet" href="css/bootstrap-4.5.0.css">-->
+    <!--    <link rel="stylesheet" href="css/bootstrap.css">-->
+
+</head>
+<body class="bg-info">
+<div style="margin-top: 50px;"></div>
+<h2 class="display-4 text-center bg-success my-4">Grid Alignment</h2>
+
+<div class="container">
+
+
+    <div class="container">
+        <!--VERTICAL ALIGNMENT-->
+        <div class="row align-items-start" style="height: 200px; border: 1px solid #333;margin-bottom: 10px;">
+            <div class="col">Top Aligned Test</div>
+            <div class="col">Top Aligned Test</div>
+            <div class="col">Top Aligned Test</div>
+        </div>
+        <div class="row align-items-center" style="height: 200px; border: 1px solid #333; margin-bottom: 10px;">
+            <div class="col">Middle Aligned Test</div>
+            <div class="col">Middle Aligned Test</div>
+            <div class="col">Middle Aligned Test</div>
+        </div>
+        <div class="row align-items-end" style="height: 200px; border: 1px solid #333;">
+            <div class="col">Bottom Aligned Test</div>
+            <div class="col">Bottom Aligned Test</div>
+            <div class="col">Bottom Aligned Test</div>
+        </div>
+    </div>
+
+    <hr class="bg-dark">
+
+    <div class="container">
+        <!--VERTICAL ALIGNMENT INDIVIDUAL COLS-->
+        <div class="row" style="height: 200px; border: 1px solid #333;">
+            <div class="col align-self-start">Top Aligned Test</div>
+            <div class="col align-self-center">Top Aligned Test</div>
+            <div class="col align-self-end">Top Aligned Test</div>
+        </div>
+    </div>
+
+    <hr class="bg-dark">
+
+    <div class="container">
+        <!--HORIZONTAL ALIGNMENT COLS-->
+        <div class="row justify-content-start" style="height: 200px; border: 1px solid #333;">
+            <div class="col-4">Top Aligned Test</div>
+            <div class="col-4">Top Aligned Test</div>
+        </div>
+        <div class="row justify-content-center" style="height: 200px; border: 1px solid #333;">
+            <div class="col-4">Top Aligned Test</div>
+            <div class="col-4">Top Aligned Test</div>
+        </div>
+        <div class="row justify-content-end" style="height: 200px; border: 1px solid #333;">
+            <div class="col-4">Top Aligned Test</div>
+            <div class="col-4">Top Aligned Test</div>
+        </div>
+        <div class="row justify-content-around" style="height: 200px; border: 1px solid #333;">
+            <div class="col-4">Top Aligned Test</div>
+            <div class="col-4">Top Aligned Test</div>
+        </div>
+        <div class="row justify-content-between" style="height: 200px; border: 1px solid #333;">
+            <div class="col-4">Top Aligned Test</div>
+            <div class="col-4">Top Aligned Test</div>
+        </div>
+    </div>
+
+    <hr class="bg-dark">
+<!--    COLUMN WRAPPING & NO GUTTERS-->
+    <div class="row no-gutters">
+        <div class="col-9">
+            <div class="card">
+                <div class="card-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta est nemo sint.                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta est nemo sint.
+
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card">
+                <div class="card-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta est nemo sint.                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta est nemo sint.
+
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="card">
+                <div class="card-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta est nemo sint.                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta est nemo sint.
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+
+    <hr class="bg-dark">
+    <br>
+</div>
+
+<div style="margin-bottom: 50px;"></div>
+
+<hr>
+
+<script src="js/jquery-3.5.1.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
